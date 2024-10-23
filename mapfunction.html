@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script>
+            // Array of objects
+            var objArray = [
+                {fname: "yahyam", lname: "last nme"},
+                {fname: "ahmed", lname: "khan"},
+                {fname: "ali", lname: "hassan"}
+            ];
+
+            // Array of numbers
+            var numArray = [11, 2, 4, 17];
+
+            // Mapping the numeric array with a function that multiplies by 10
+            var numResult = numArray.map(function(X) {
+                return X * 10;
+            });
+            document.write("Numeric Array Result: " + numResult + "<br>");
+
+            // Mapping the object array with a function that returns full names
+            var objResult = objArray.map(function(X) {
+                return X.fname + " " + X.lname;
+            });
+            document.write("Object Array Result: " + objResult.join(", "));
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

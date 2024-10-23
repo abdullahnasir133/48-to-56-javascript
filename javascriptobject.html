@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+        <script>
+            var a = {
+                fname: 'abdullah',
+                lname: 'Nasir',
+                age: 25,
+                email: 'rose131@gmail.net',
+                favMovies: ['Dhoom', 'Sholay', 'Hum'],
+                
+                // Method to return full name
+                fullname : function () {
+                    return this.fname + " " + this.lname;
+                },
+
+                // Method to return salary
+                salary: function() {
+                    return 2500;
+                }
+            };
+
+            console.log(a);  // Logs the object to the console
+
+            // Display email and full name on the page
+            document.write("Email: " + a.email + "<br>");
+            document.write("Full Name: " + a.fullname() + "<br>");
+            document.write("Salary: " + a.salary());
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
